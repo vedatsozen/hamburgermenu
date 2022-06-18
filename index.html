@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+<hr id="tophr">
+
+<hr id="center1">
+
+<hr id="center2">
+
+<hr id="bottomhr">
+
+</div> 
+</body>
+
+<script>
+
+document.getElementById("container").addEventListener("click", myfunction)
+
+function myfunction() {
+
+document.getElementById("center1").classList.toggle("rotateme");
+document.getElementById("center2").classList.toggle("rotateme2");
+document.getElementById("tophr").classList.toggle("hideme");
+document.getElementById("bottomhr").classList.toggle("hideme");
+
+}
+
+</script>
+
+
+
+</html>
